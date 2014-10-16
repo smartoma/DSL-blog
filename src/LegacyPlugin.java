@@ -11,7 +11,7 @@ import static java.lang.Boolean.FALSE;
 
 public class LegacyPlugin {
 
-    public List<VisualField> getVisualFieldsForPage() {
+    public List<VisualField> getVisualFields() {
         List<VisualField> visualFields = new ArrayList<>();
 
         int maxlength = 30;
