@@ -2,7 +2,7 @@ package dsl;
 
 import domain.VisualField;
 
-public class Spanning extends MaxLength {
+public class Spanning extends DSLTerminator {
 
     private static final int MAX_ALLOWED_LENGTH = 100;
 
@@ -22,12 +22,12 @@ public class Spanning extends MaxLength {
         return spanning;
     }
 
-    public MaxLength withMaxLength(int length) {
+    public DSLTerminator withMaxLength(int length) {
         if (length > MAX_ALLOWED_LENGTH) {
             throw new IllegalArgumentException("Maxlength value too big.");
         }
         visualField.setMaxLength(length);
-        return new MaxLength(visualField);
+        return new DSLTerminator(visualField);
     }
 
 }
