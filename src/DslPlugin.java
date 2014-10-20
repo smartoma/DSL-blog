@@ -15,7 +15,7 @@ import static java.util.Arrays.asList;
 
 public class DslPlugin {
 
-    public List<VisualField> getVisualFieldsForPage() {
+    public List<VisualField> getVisualFields() {
         return asList(
             field("duedate").
                 place(label(LEFT), comment(RIGHT)).
